@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio9;
+package ejercicio9_1;
+
+import ejercicio10_1.*;
+import ejercicio10_2.*;
+import ejercicio10_3.*;
 
 /**
  *

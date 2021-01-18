@@ -4,10 +4,11 @@ Los threads actuan sobre variables compartidas
 Observo como cada ejecución da distintos resultados, diferentes al esperado
 Ya que se pisan entre ellos
  */
-package ejercicio9;
+package ejercicio9_3;
 
 public class Main {
     public static void main(String [] args) throws InterruptedException{
+        long start = System.currentTimeMillis();
         Thread t1, t2, t3, t4;
         Counter suma=new Counter();
         Counter resta=new Counter();
@@ -29,5 +30,7 @@ public class Main {
         t4.join();
         
         System.out.println("DDP7 Contador final Suma: "+ suma.value() + "\n" + "DDP7 Contador final resta: "+ resta.value());
+        long end = System.currentTimeMillis();
+        System.out.println("DDP7 Time end: " + (end - start));
     }
 }
