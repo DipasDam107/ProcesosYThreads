@@ -1,5 +1,8 @@
 /*
  Interleaving entre threads
+Los threads actuan sobre variables compartidas
+Observo como cada ejecución da distintos resultados, diferentes al esperado
+Ya que se pisan entre ellos
  */
 package ejercicio9;
 
