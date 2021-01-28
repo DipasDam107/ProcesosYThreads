@@ -107,10 +107,10 @@ public class Medicion {
                 resultadosParciales[3] = mediaMitad('s', true,4);
             }
 	});        
-	t1.start();
-	t2.start();
-	t3.start();
-	t4.start();
+            t1.start();
+            t2.start();
+            t3.start();
+            t4.start();
 	try {        
 		t1.join();
 		t2.join();
