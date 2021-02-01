@@ -33,12 +33,7 @@ public class Cars {
             */
             
             //Esta solución usa un monitor distinto para el primero
-            if(this.number == 1 )
-                 synchronized(primeroMonitor){
-                    System.out.format("DDP7 - Car " + number + " is waiting for Car " + t.getNumber() + "\n");
-                    t.lane(this);
-                }
-            else
+            
                 synchronized(this){
                     System.out.format("DDP7 - Car " + number + " is waiting for Car " + t.getNumber() + "\n");
                     t.lane(this);
@@ -47,7 +42,7 @@ public class Cars {
             
 	}
     
-	public synchronized void lane(Cars t) {
+	private void lane(Cars t) {
             System.out.format("DDP7 - Car " + t.getNumber() + " is NOT waiting for " + number  + " anymore\n");
 	}
 
